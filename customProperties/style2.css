@@ -1,0 +1,61 @@
+       @property --box-color {
+  syntax: "<color>";
+  initial-value: cornflowerblue;
+  inherits: false;
+} /*also we can do custom property by using  @property and we can Defining fallbacks in the var() means we can use 2 or more argument in var*/
+.container{
+    width: 50%;
+    height: 50%;
+}
+.one{
+    --box-color:green;
+    background-color: var(--box-color);
+     height: 5em;
+}
+.two{
+    --box-color:violet;
+    background-color: var(--box-color);
+
+    height: 5em;
+}
+.three{
+    --box-color:greeeen;
+    background-color: var(--box-color);
+    /*this dosen't work beacause there is color like "greeeen" so it takes the default color  cornflowerblue*/
+     height: 5em;
+}
+button {
+  --h: 100;
+  --s: 50%;
+  --l: 50%;
+  --a: 1;
+
+  background: hsl(var(--h) var(--s) var(--l) / var(--a));
+}
+button:hover { /* Change the lightness on hover */
+  --l: 75%;
+}
+button:focus { /* Change the saturation on focus */
+  --s: 75%;
+}
+button[disabled] {  /* Make look disabled */
+  --s: 0%;
+  --a: 0.5;
+}
+/*it's so cool! babe*/
+
+/*also we can*/
+.div{
+--size:50px;
+--font-family:serif;
+}
+.pone{
+   
+    font-family: var(--scale/*it's undefind so it will take the second property*/,var(--family/*it's undefind so it will take the second property*/,sans-serif));
+    font-size: var(--font-size/*it's undefind so it will take the second property*/ ,var(--size)) ;
+}
+.ptwo{
+    /*also we can use css function with css custom property like this*/
+    font-size: calc(var(--size)/1.4);
+    /*so cool!*/
+}
