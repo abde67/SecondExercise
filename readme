@@ -68,3 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 our color property would have a value of white. If the --color-text custom property 
 was invalid or didn’t exist, the fallback to our fallback would take over and the color 
 property would have a value of yellow.*/
+
+
+/*
+You can provide suggested, 
+automatically-completed values for form widgets 
+using the <datalist> element with child <option> 
+elements to specify the values to display. The <datalist> needs to
+ be given an id*/
