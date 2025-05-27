@@ -1,0 +1,46 @@
+   <label for="carrots">Carrots</label>
+      <input
+        type="checkbox"
+        id="carrots"
+        name="vegetable"
+        value="carrots"
+        checked />
+    
+      <label for="peas">Peas</label>
+      <input type="checkbox" id="peas" name="vegetable" value="peas" />
+
+
+         <label for="soup">Soup</label>
+      <input type="radio" id="soup" name="meal" value="soup"  checked />
+
+         <label for="pizza">Pizza</label>
+      <input type="radio" id="pizza" name="meal" value="pizza" />
+
+<br>
+
+      <label for="price">Choose a maximum house price: </label>
+<input
+  type="range"
+  name="price"
+  id="price"
+  min="50000"
+  max="500000"
+  step="1000"
+  value="250000" />
+<output class="price-output" for="price"></output>
+
+<script>const price = document.querySelector("#price");
+const output = document.querySelector(".price-output");
+
+output.textContent = price.value;
+
+price.addEventListener("input", () => {
+  output.textContent = price.value;
+});
+</script>
+
+
+
+<input type="color" name="color" id="color" />
+
+
