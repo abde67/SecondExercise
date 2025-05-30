@@ -1,12 +1,52 @@
 .container{
-  display: grid;
-grid-template-columns: 50px 50px  ;
-grid-template-rows:auto;
+display: grid;
+grid-template-columns: 1fr 3fr;
+grid: template rows 1fr 1fr 5fr 1fr;
+gap: 15px;
+text-align: center;
+grid-template-areas:
+ "header header"
+ "sidebar nav"
+ "sidebar article"
+ "footer footer"
+ 
 
 
 }
-.container>div{
-  border: 1px solid blue;
- 
+p{
+  max-inline-size: 80em;
+  font-size: 23px;
+  text-align: start;
+   
 
+}
+.container>div{
+  border-radius: 10px;
+  font-size: 30px;
+  
+  color: white;
+  padding: 10px;
+  font-family: sans-serif;
+}
+.header{
+  grid-area: header;
+background-color: rgb(17, 104, 82);
+
+}
+.sidebar{
+ grid-area: sidebar;
+ background-color: rgb(14, 107, 169);
+}
+.article{
+ grid-area: article;
+ background-color: rgb(145, 28, 219);
+
+}
+.footer{
+grid-area: footer;
+background-color: rgb(53, 61, 69);
+}
+.nav{
+  grid-area: nav;
+  background-color: rgb(104, 44, 218);
 }
