@@ -18,14 +18,11 @@
 }
 body{
   margin: 0;
-  
    font-family: 'robotoregular',serif;
 }
 .container{
  display: grid;
   grid-template-columns: 1fr 4fr;
-  
-  
 }
 .sidebar{
  padding-right: 70px;
@@ -37,9 +34,7 @@ body{
 }
 .main{
  grid-column: 2/3;
- 
  background-color: rgb(217, 223, 238);
-
 }
 .home,.settings{
   display: flex;
@@ -61,7 +56,6 @@ body{
   width: 20px;
   height: 20px;
 }
-
 .sidebar>div>div{
   display: flex;
   align-items: center;
@@ -69,7 +63,6 @@ body{
 .sidebar p{
   color: white;
   margin: 0;
- 
   font-size: 15px;
   font-weight: 600;
 }
@@ -87,8 +80,6 @@ body{
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 55px 55px;
   row-gap: 12px;
- 
-  
   height: 130px; 
   padding-bottom: 20px; 
   }
@@ -105,10 +96,8 @@ body{
   padding-left: 30px;
   align-items: center;
   grid-template-columns: 25px 2fr;
- 
 }
 .search>.searching{
- 
   height: 23px;
   border: none;
   border-radius: 20px;
@@ -132,14 +121,11 @@ body{
   border-radius: 50%;
 }
 .left>.profilename{
-
 font-weight: 700;
 font-size: 20px;
-
 }
 .channel{
   padding-left: 40px;
- 
   display: flex;
   grid-column: 1/2;
   align-items:center;
@@ -165,7 +151,6 @@ font-size: 20px;
   gap: 15px;
   align-items:end;
    padding-right: 40px;
-  
 }
 .button>button{
   border: none;
@@ -175,24 +160,14 @@ font-size: 20px;
   color: white;
   font-weight: 600;
   font-size: 17px;
- 
 }
-
-
-
 .main{
   display: grid;
   grid-template-columns: 2fr 1fr;
- 
-
-
 }
 .main>p{
- 
 padding-left: 20px;
-  
 }
-
 .yourproject{
   grid-column: 1/2;
   display: grid;
@@ -200,14 +175,11 @@ padding-left: 20px;
  grid-template-rows: 260px 250px;
 padding: 20px;
   padding-top: 0;
-  column-gap: 30px;
+  column-gap: 35px;
   row-gap: 10px;
-
-  
 }
 .annotrending{
  grid-column: 2/3;
- 
 padding: 20px;
  display: grid;
  grid-template-rows: 370px 400px;
@@ -217,26 +189,15 @@ padding: 20px;
 .announcement{
   background: white;
  padding: 20px;
-
   border-radius: 10px;
- 
- 
 }
 .announcement p{
- 
   line-height: 1.4;
- 
-}
-.announcementsite{
- 
-
- 
 }
 .trending>div{
 background-color:white;
 padding-left: 20px;
 border-radius: 10px;
-
 }
 .main p{
   color: gray;
@@ -250,22 +211,18 @@ border-radius: 10px;
    font-weight: 700;
   font-size: 15px;
 }
-
 .yourproject>div{
   padding: 20px;
-  height: 190px;
+  padding-bottom: 0;
+  height: 200px;
   border-left: 7px solid orange;
   border-radius: 6px;
   background-color: white;
 }
-
-
 .trending>div>div>img{
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  
-  
 }
 .trending>div>div{
  display: flex;
@@ -275,4 +232,21 @@ border-radius: 10px;
 .trending>div>div>p{
   min-inline-size: 200px;
   
+}
+.yourproject>div{
+  display: grid;
+  gap: 30px;
+  grid-template-rows: 100px 50px;
+}
+.yourproject>div>.icons img{
+  width: 20px;
+  height: 20px;
+}
+.yourproject>div>.icons{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 17px;
+  padding-right: 10px;
+
 }
